@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    count=0;
+    function choi() {
+      var back = prompt("Nhập khoảng đoán dưới: ",0);
+      var top = prompt("Nhập khoảng đoán trên: ",0);
+      var randomNumber=Math.random();
+      randomNumber=parseInt(randomNumber*100) %(top-back) + parseInt(back);
+      var number=prompt("Nhập số bạn muốn đoán: ",0);
+      if (number==randomNumber) alert("Chính xác!");
+      else {
+        while (count<3){
+          number=prompt("Đoán sai, nhập lại: ",0);
+          count++;
+        }
+        alert("Game Over!");
+      }
+    }
+  </script>
+  <button type="button" onclick="choi()">CHƠI</button>
+</body>
+</html>

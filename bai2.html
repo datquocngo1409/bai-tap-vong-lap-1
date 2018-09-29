@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    var nhietdo = 0;
+    do{
+      if(nhietdo == 0) nhietdo=prompt("Nhập nhiệt độ: ",0);
+      else if (nhietdo < 20) nhietdo=prompt("Nhiệt độ phải trên 20, nhập lại: ",0);
+      else if(nhietdo > 100) nhietdo=prompt("Nhiệt độ không được vượt quá 100, nhập lại: ",0);
+    }while (nhietdo<20 || nhietdo>100);
+    alert("Nhiệt độ đã nhập: "+nhietdo);
+  </script>
+</body>
+</html>

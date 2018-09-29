@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    var count=0, tong=0,i=0;
+    while (count<30) {
+      if (i % 7 == 0) {
+        count++;
+        tong += parseInt(i);
+        document.write(i + " ");
+      }
+      i++;
+    }
+    alert("Tổng 30 số chia hết cho 7 đầu tiên: "+tong);
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function fibo(n) {
+    if(n==1) return 0;
+    if(n==2) return 1;
+    else return parseInt(fibo(n-1))+parseInt(fibo(n-2));
+  }
+  var i=1;
+  while(fibo(i)%5 != 0){
+    i++;
+  }
+  alert("Số fibo đầu tiên chia hết cho 5 là: "+fibo(i));
+</script>
+</body>
+</html>
